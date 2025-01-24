@@ -29,6 +29,7 @@ FROM base as build
 
 WORKDIR /usr/src/app
 
+
 COPY --from=deps /usr/src/app/node_modules /usr/src/app/node_modules
 
 ADD . .
